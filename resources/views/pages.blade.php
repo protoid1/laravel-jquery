@@ -109,7 +109,7 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
+                        <a class="portfolio-box" src="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Category</div>
@@ -262,5 +262,57 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+        $(document).ready(function(){
+            var currentPopupIndex = null; // Indeks popup yang sedang ditampilkan
+            var index = null; // Indeks popup yang sedang ditampilkan
+            var srcValue = $("a.portfolio-box").attr("src");
+            // alert(srcValue);
+
+            // Fungsi untuk menampilkan popup berdasarkan indeksnya
+            function showPopup(index) {
+                $(".portofolio-box").fadeOut(); // Menyembunyikan semua popup yang sedang aktif
+                $("#portfolio" + index).fadeIn(); // Menampilkan popup dengan ID sesuai indeks
+                currentPopupIndex = index; // Menyimpan indeks popup yang sedang ditampilkan
+            }
+
+            // Menampilkan Popup saat Thumbnail diklik
+            $(".portfolio-box").click(function(){
+                alert('masuk portfolio-box');
+                var index = $(".portfolio-box").index(this); // Mengambil indeks thumbnail yang diklik
+                alert(index);
+                showPopup(index); // Menampilkan popup berdasarkan indeksnya
+            });
+
+            // Tombol Close pada setiap Popup
+            $(".popup-container .close-btn").click(function(){
+                $(this).closest(".popup-container").fadeOut(); // Menyembunyikan popup yang sedang aktif
+                currentPopupIndex = null; // Menghapus indeks popup yang sedang ditampilkan
+            });
+
+            // Tombol Next pada setiap Popup
+            // $(".popup-container .next-btn").click(function(){
+            //     var nextIndex = currentPopupIndex + 1; // Menghitung indeks popup berikutnya
+            //     showPopup(nextIndex % {{--count($imageUrls)--}}); // Menampilkan popup berikutnya
+            // });
+
+            // Tombol Previous pada setiap Popup
+            // $(".popup-container .prev-btn").click(function(){
+            //     var prevIndex = currentPopupIndex - 1; // Menghitung indeks popup sebelumnya
+            //     if (prevIndex < 0) {
+            //         prevIndex = {{--count($imageUrls)--}} - 1; // Jika indeks negatif, atur ke indeks terakhir
+            //     }
+            //     showPopup(prevIndex); // Menampilkan popup sebelumnya
+            // });
+
+            // Menutup Popup saat area di luar Popup diklik
+            $(window).click(function(event) {
+                if (event.target.classList.contains("popup-container")) {
+                    $(".popup-container").fadeOut(); // Menyembunyikan popup jika area di luar popup diklik
+                    currentPopupIndex = null; // Menghapus indeks popup yang sedang ditampilkan
+                }
+            });
+        });
+    </script>
     </body>
 </html>

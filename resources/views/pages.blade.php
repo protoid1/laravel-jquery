@@ -46,7 +46,7 @@
                     
                     <div class="col-lg-6 align-self-baseline">
                         {{-- <p class="text-white-75 mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p> --}}
-                        <p class="text-white-75 mb-12">Berawal dari langkah kecil, untuk menjadi sesuatu yang besar dalam ber-proses.</p>
+                        <p class="text-white-75 mb-12">Warong Jajanan Kita</p>
                         <a class="btn btn-primary-custom1 btn-xl" href="#about">Cari tahu Yuk</a>
                     </div>
                 </div>

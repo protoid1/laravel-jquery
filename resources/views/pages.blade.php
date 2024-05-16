@@ -65,14 +65,14 @@
                 <div class="col-lg-8 text-center">
                     <h2 class="text-white-75 mt-0">Perjalanan Si Waroeng</h2>
                     <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4">Bearawal dari dapur kecil pada tahun 2021,Sorang dengan kecintaan pada
+                    <p class="text-white-75 mb-4">Bearawal dari dapur kecil pada tahun 2021,Seorang dengan kecintaan pada
                         makanan memulai petualangan kulinernya. </p>
                     {{--
                     <hr class="divider divider-light" /> --}}
                     <p class="text-white-75 mb-4">Meskipun kecil, dapur Waroeng21 penuh dengan cita rasa dan
                         kreativitas. Setiap hidangan dibuat dengan sepenuh hati, menggunakan bahan-bahan segar dan
                         berkualitas tinggi. Tak heran, mereka dengan cepat menarik perhatian para pecinta kuliner. </p>
-                    <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+                    <a class="btn btn-light btn-xl" href="#services">Ayo Kita Mulai !</a>
                 </div>
             </div>
         </div>
@@ -80,35 +80,35 @@
     <!-- Services-->
     <section class="page-section" id="services">
         <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">At Your Service</h2>
-            <hr class="divider" />
+            <h2 class="text-center mt-0">Pelayanan Kami</h2>
+            <hr class="divider-custom" />
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Sturdy Themes</h3>
-                        <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                        <div class="mb-2"><i class="bi-house fs-1 text-primary1"></i></div>
+                        <h3 class="h4 mb-2">Produksi Rumahan</h3>
+                        <!-- <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Up to Date</h3>
-                        <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                        <div class="mb-2"><i class="bi bi-hand-thumbs-up fs-1 text-primary1"></i></div>
+                        <h3 class="h4 mb-2">Bahan Berkualitas</h3>
+                        <!-- <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Ready to Publish</h3>
-                        <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                        <div class="mb-2"><i class="bi-heart fs-1 text-primary1"></i></div>
+                        <h3 class="h4 mb-2">Dibuat Sepenuh Hati</h3>
+                        <!-- <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Made with Love</h3>
-                        <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary1"></i></div>
+                        <h3 class="h4 mb-2">Layanan Online</h3>
+                        <!-- <p class="text-muted mb-0">Is it really open source if it's not made with love?</p> -->
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@
     <!-- Portfolio-->
     <div id="portfolio">
         <div class="container-fluid p-0">
-            <div class="row g-1">
+            <div class="row g-0">
                 @foreach ($imageUrls as $index => $imageUrl)
                     <div class="col-lg-4 col-sm-6">
                         <div class="portfolio-box" title="Project Name">
@@ -139,19 +139,19 @@
         </div>
     </div>
     <!-- Call to action-->
-    <section class="page-section bg-dark text-white">
+    <!-- <section class="page-section bg-dark text-white">
         <div class="container px-4 px-lg-5 text-center">
             <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
             <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
         </div>
-    </section>
+    </section> -->
     <!-- Contact-->
     <section class="page-section" id="contact">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6 text-center">
                     <h2 class="mt-0">Let's Get In Touch!</h2>
-                    <hr class="divider" />
+                    <hr class="divider-custom" />
                     <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will
                         get back to you as soon as possible!</p>
                 </div>
@@ -218,19 +218,17 @@
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
                         <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
+                        <div class="d-grid"><button class="btn btn-primary-custom1 btn-xl disabled" id="submitButton"
                                 type="submit">Submit</button></div>
                     </form>
                 </div>
             </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                    <div>+1 (555) 123-4567</div>
-                </div>
-            </div>
         </div>
     </section>
+     <!-- Ikon WhatsApp -->
+     <a href="https://wa.me/6285697790134?text=Hai%20aku%20mau%20pesan%20jajananya%20dong%20kak%20%3AD" class="whatsapp-icon" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
@@ -252,6 +250,7 @@
         $(document).ready(function () {
             var currentPopupIndex = null; // Indeks popup yang sedang ditampilkan
             var index = null; // Indeks popup yang sedang ditampilkan
+            var indexing = $(this).data('imageUrl');
 
             // Fungsi untuk menampilkan popup berdasarkan indeksnya
             function showPopup(index) {
@@ -262,7 +261,8 @@
 
             // Menampilkan Popup saat Thumbnail diklik
             $(".portfolio-box").click(function () {
-                // alert('masuk portfolio-box');
+                
+                alert(indexing);
                 var index = $(".portfolio-box").index(this); // Mengambil indeks thumbnail yang diklik
                 // alert(index);
                 showPopup(index); // Menampilkan popup berdasarkan indeksnya

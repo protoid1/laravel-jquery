@@ -17,7 +17,8 @@ class PagesController extends Controller
             $images = File::files($imageFolder);
 
             foreach ($images as $image) {
-                $imageUrls[] = asset('assets/img/portfolio/fullsize/' . $image->getFilename());
+                $imageUrls[] = ['url' => asset('assets/img/portfolio/fullsize/' . $image->getFilename()),
+                                'nameFile'=>pathinfo($image->getFilename(), PATHINFO_FILENAME)];
             }
         }
 

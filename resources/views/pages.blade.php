@@ -33,10 +33,10 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
                 </ul>
             </div>
         </div>
@@ -121,10 +121,10 @@
                 @foreach ($imageUrls as $index => $imageUrl)
                     <div class="col-lg-4 col-sm-6">
                         <div class="portfolio-box" title="Project Name">
-                            <img class="img-fluid" src="{{ $imageUrl }}" alt="..." />
+                            <img class="img-landscape" src="{{ $imageUrl['url'] }}" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-name">{{ $imageUrl['nameFile'] }}</div>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                         <span class="close-btn">&times;</span>
                         <span class="prev-btn">&#10094;</span>
                         <span class="next-btn">&#10095;</span>
-                        <img src="{{ $imageUrl }}" alt="..." class="popup-img">
+                        <img src="{{ $imageUrl['url'] }}" alt="..." class="popup-img">
                     </div>
                 @endforeach
             </div>
@@ -150,10 +150,9 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Let's Get In Touch!</h2>
+                    <h2 class="mt-0">Ayo Hubungi Kami!</h2>
                     <hr class="divider-custom" />
-                    <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will
-                        get back to you as soon as possible!</p>
+                    <p class="text-muted mb-5">Mau coba jadi member dan dapat keuntungan menarik? isi form di bawah dan jangan lupa isi keterangan review nya ya </p>
                 </div>
             </div>
             <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
@@ -232,7 +231,7 @@
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2023 - Company Name</div>
+            <div class="small text-center text-muted">Copyright &copy; 2024 - Waroeng</div>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
@@ -262,7 +261,6 @@
             // Menampilkan Popup saat Thumbnail diklik
             $(".portfolio-box").click(function () {
                 
-                alert(indexing);
                 var index = $(".portfolio-box").index(this); // Mengambil indeks thumbnail yang diklik
                 // alert(index);
                 showPopup(index); // Menampilkan popup berdasarkan indeksnya

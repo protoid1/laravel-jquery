@@ -603,6 +603,15 @@ progress {
   height: auto;
 }
 
+.img-landscape {
+  width: 100%;  /* Atur lebar gambar agar mengisi elemen induk */
+  max-width: 100%;  /* Pastikan gambar tidak lebih lebar dari elemen induknya */
+  max-height: 300px;  /* Atur tinggi maksimum gambar sesuai kebutuhan kamu */
+  height: auto;  /* Tinggi gambar akan menyesuaikan dengan lebar */
+  object-fit: cover;  /* Gambar akan dipotong jika perlu agar sesuai dengan wadahnya */
+  aspect-ratio: 16/9;  /* Atur rasio aspek gambar menjadi 16:9 untuk landscape */
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;

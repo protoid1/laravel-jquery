@@ -10,6 +10,7 @@ class HomeController extends Controller
     {
         $imageUrls = [];
         $imageFolder = public_path('assets');
+        
 
         // Cek apakah folder gambar ada
         if (File::exists($imageFolder)) {

@@ -8,7 +8,16 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+class Service{ //tambahan
+//
+public $hello ='<h1>Test</h1>';
 
+};
+
+Route::get('/test',function(Service $service){
+    // return($service->hello);
+    die($service::class);
+});
 // Route::get('/Home', [HomeController::class, 'showGallery']);
 
 Route::get('/', [PagesController::class , 'showImage']);

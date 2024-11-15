@@ -6,20 +6,8 @@
     },
     "routes": [
         {
-            "src": "/css/(.*)",
-            "dest": "/public/css/$1"
-        },
-        {
-            "src": "/js/(.*)",
-            "dest": "/public/js/$1"
-        },
-        {
             "src": "/assets/img/(.*)",
-            "dest": "/public/assets/img/$1"
-        },
-        {
-            "src": "/assets/(.*)",
-            "dest": "/public/assets/$1"
+            "dest": "/public/assets/img/"
         },
         {
             "src": "/(.*)",
@@ -42,5 +30,6 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
-    }
+    },
+    "outputDirectory": "public"
 }

@@ -13,7 +13,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://your.url.from.vercel.app",
+        "APP_URL": "https://waroengduasatu.vercel.app",
         "APP_KEY": "base64:KofMX3T9NRU2RELB3rGjgiO4X65+SQS86TjZj9RdOog=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
